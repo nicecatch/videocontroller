@@ -1,7 +1,9 @@
 (
     function() {
         var video = document.getElementsByTagName('video');
-        if (video.length != 1 || video[0].parentNode.childNodes.length != 1)
+        if (video.length != 1 ||
+            video[0].parentElement.tagName.toLowerCase().localeCompare('body') != 0 ||
+            video[0].parentElement.childNodes.length != 1)
             return 0; //no video or too much elements
 
         video = video[0];
