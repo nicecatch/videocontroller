@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+
+  "name": "ControlPower",
+  "description": "This extension helps resizing audio/video control",
+  "version": "0.1",
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_title": "Resize controls!"
+  },
+
+  "background": {
+    "scripts": ["js/background.js"],
+    "persistent": false
+  },
+
+  "permissions": [
+    "activeTab"
+  ]
+}
